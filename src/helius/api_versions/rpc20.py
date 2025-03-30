@@ -1,7 +1,7 @@
 from helius.utils import curl_helius
 
 
-class RpcAPI:
+class ApiRPC20:
     def __init__(self, api_key: str, request_prefix: str = "RPC20-"):
         self.base_rpc_url = "https://mainnet.helius-rpc.com"
         self.api_key_query = f"?api-key={api_key}"

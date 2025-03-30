@@ -1,7 +1,7 @@
 from helius.utils import curl_helius
 
 
-class APIv0:
+class Apiv0:
     def __init__(self, api_key: str):
         self.base_url = "https://api.helius.xyz"
         self.api_key = api_key
