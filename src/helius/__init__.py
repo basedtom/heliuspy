@@ -1,1 +1,1 @@
-from .transactions import TransactionsAPI
+from .helius_api import HeliusAPI

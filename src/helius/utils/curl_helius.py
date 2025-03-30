@@ -23,5 +23,5 @@ def _send_request(url, headers=None, params=None, postdict=None, verb=None):
         response = requests.post(url, json=postdict, headers=headers)
     else:
         response = requests.get(url, params=params, headers=headers)
-    print(url, postdict)
+
     return response.json()
