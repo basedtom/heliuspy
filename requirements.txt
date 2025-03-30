@@ -1,11 +1,2 @@
-azure-common
-azure-core
-azure-servicebus
-azure-storage-blob
-more-itertools
-numpy
-pandas
-pyodbc
-python-dotenv
-SQLAlchemy
-gql[all]
+requests==2.32.3
+python-dotenv==1.0.1
