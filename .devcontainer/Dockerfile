@@ -13,7 +13,7 @@ RUN python -m pip install --upgrade pip
 # Install pip requirements
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
-
+RUN python -m pip install --upgrade pip setuptools wheel build
 
 WORKDIR /workspace
 COPY . /workspace
