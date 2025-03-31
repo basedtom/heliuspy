@@ -1,4 +1,4 @@
-from helius.utils import curl_helius
+from heliuspy.utils import curl_helius
 
 
 class Apiv0:

@@ -1,5 +1,5 @@
-from helius.api_versions.rpc20 import ApiRPC20
-from helius.api_versions.v0 import Apiv0
+from heliuspy.api_versions.rpc20 import ApiRPC20
+from heliuspy.api_versions.v0 import Apiv0
 
 
 class HeliusAPI(ApiRPC20, Apiv0):

@@ -3,7 +3,7 @@ import os
 import dotenv
 import pytest
 
-from helius import HeliusAPI
+from heliuspy import HeliusAPI
 
 
 @pytest.fixture
