@@ -1,6 +1,6 @@
 version: '3.4'
 services:
-  helius-api:
+  heliuspy:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile

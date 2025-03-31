@@ -1,2 +1,6 @@
 requests==2.32.3
 python-dotenv==1.0.1
+black
+pytest
+flake8-pyproject
+twine

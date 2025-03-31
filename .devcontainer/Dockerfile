@@ -6,8 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 # Turns off buffering for easier container logging
 ENV PYTHONUNBUFFERED=1
-
-ENV PYTHONPATH="${PYTHONPATH}:/workspaces/src"
+ENV PYTHONPATH="/workspace"
 
 RUN python -m pip install --upgrade pip
 
@@ -15,14 +14,11 @@ RUN python -m pip install --upgrade pip
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
 
-RUN python -m pip install flake8
-RUN python -m pip install black
-RUN python -m pip install pytest
 
-WORKDIR /app
-COPY . /app
+WORKDIR /workspace
+COPY . /workspace
 
 # Creates a non-root user with an explicit UID and adds permission to access the /app folder
 # For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
-RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
+RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /workspace
 USER appuser
