@@ -13,7 +13,7 @@ pip install heliuspy
 ```python
 from heliuspy import HeliusAPI
 
-H = HeliusAPI(api_key=API_KEY)
+HeliusInterface = HeliusAPI(api_key=API_KEY)
 
 latest_block_info = HeliusInterface.get_latest_blockhash()
 
