@@ -8,13 +8,22 @@ A Python library for interacting with Helius endpoints.
 pip install heliuspy
 ```
 
-## Modules
+## Example Usage
 
-### heliuspy
+```python
+from heliuspy import HeliusAPI
 
-- Version: `0.2.0`
+HeliusInterface = HeliusAPI(api_key=API_KEY)
 
-#### `HeliusAPI`
+latest_block_info = HeliusInterface.get_latest_blockhash()
 
-### heliuspy.utils
+transactions = HeliusInterface.get_parsed_transactions(
+        address='XYZ',
+        type="SWAP",
+        before="37TBFEwuZnFfH1UA8XWPLsecmUWURZjVwou2i43MF7UAUqZLPu8aM7yKH3u14PjRv6qBU6vLvKsHarX6nJnAhNnx",
+        limit=10,
+    )
+
+```
+
 
